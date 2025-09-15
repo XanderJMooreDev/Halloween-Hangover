@@ -42,8 +42,6 @@
     {"id":{"name":"Obj_PlayerspriteBack","path":"sprites/Obj_PlayerspriteBack/Obj_PlayerspriteBack.yy",},},
     {"id":{"name":"Obj_PlayerspriteLeft","path":"sprites/Obj_PlayerspriteLeft/Obj_PlayerspriteLeft.yy",},},
     {"id":{"name":"Obj_PlayerspriteRight","path":"sprites/Obj_PlayerspriteRight/Obj_PlayerspriteRight.yy",},},
-    {"id":{"name":"tileset_1","path":"sprites/tileset_1/tileset_1.yy",},},
-    {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

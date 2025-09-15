@@ -5,19 +5,19 @@ var pressed_down = keyboard_check(vk_down);
 
 if(pressed_up)
 {
-	y=y-1
+	y=y-5
 }
 if(pressed_left)
 {
-	x=x-1
+	x=x-5
 }
 if(pressed_right)
 {
-	x=x+1
+	x=x+5
 }
 if(pressed_down)
 {
-	y=y+1
+	y=y+5
 }
 if(pressed_right)
 {
@@ -34,26 +34,4 @@ if(pressed_down)
 if(pressed_up)
 {
 	sprite_index = Obj_PlayerspriteBack;
-}
-
-//move camera
-#region
-
-halfViewWidth = camera_get_view_width(view_camera[0])/2;
-halfViewHeight = camera_get_view_height(view_camera[0])/2;
-camera_set_view_pos(view_camera[0], x - halfViewWidth, y - halfViewHeight);
-
-#endregion
-if (y >= 600){
-	y = 600;
-}
-else if (y <= 0){
-	y = 0;
-}
-
-if (x >= 600){
-	x = 600;
-}
-else if (x <= 0){
-	x = 0;
 }
