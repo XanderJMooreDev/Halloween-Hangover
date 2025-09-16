@@ -1,6 +1,7 @@
 hasVampire = false;
 hasWerewolf = false;
 hasZombie = false;
+hasKey = false;
 
 joystickX = 0;
 joystickY = 0;
@@ -58,6 +59,5 @@ attempt_move = function(moveX, moveY) {
 	if place_meeting(moveX, moveY, obj_gap) && action != "Vampire Dash" {
 		death();
 	}
-	
-	return !place_meeting(moveX, moveY, obj_terrain) && !place_meeting(moveX, moveY, obj_door);
+	return !place_meeting(moveX, moveY, obj_terrain) && (hasKey || !place_meeting(moveX, moveY, obj_door));
 }
