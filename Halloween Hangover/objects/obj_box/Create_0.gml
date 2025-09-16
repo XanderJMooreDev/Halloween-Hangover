@@ -6,5 +6,6 @@ attempt_move = function(moveX, moveY) {
 		instance_destroy();
 	}
 	
-	return !place_meeting(moveX, moveY, obj_terrain);
+	return !place_meeting(moveX, moveY, obj_terrain)
+	&& !place_meeting(moveX, moveY, obj_door);
 }

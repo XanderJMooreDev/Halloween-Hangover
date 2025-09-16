@@ -31,9 +31,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_terrain",
-    "path":"sprites/spr_terrain/spr_terrain.yy",
+    "name":"spr_box_hitbox",
+    "path":"sprites/spr_box_hitbox/spr_box_hitbox.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_box_hitbox",
+    "path":"sprites/spr_box_hitbox/spr_box_hitbox.yy",
+  },
   "visible":true,
 }

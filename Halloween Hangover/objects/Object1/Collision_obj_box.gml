@@ -5,10 +5,10 @@ if currentMonster == "Zombie" {
 	else {
 		other.velocityY = 5.1 * joystickY;
 	}
+	
+	pushingTime = .1;
 }
-else {
-	if attempt_move(x - 5 * joystickX, y - 5 * joystickY) {
-		x -= 5 * joystickX;
-		y -= 5 * joystickY;
-	}
+if attempt_move(x - 5 * joystickX, y - 5 * joystickY) {
+	x -= 5 * joystickX;
+	y -= 5 * joystickY;
 }

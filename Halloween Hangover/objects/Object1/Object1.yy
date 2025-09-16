@@ -7,6 +7,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_box","path":"objects/obj_box/obj_box.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Obj_key","path":"objects/Obj_key/Obj_key.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Object1",
@@ -38,8 +39,8 @@
     "path":"sprites/Obj_PlayerspriteBack/Obj_PlayerspriteBack.yy",
   },
   "spriteMaskId":{
-    "name":"spr_terrain",
-    "path":"sprites/spr_terrain/spr_terrain.yy",
+    "name":"spr_idle_human",
+    "path":"sprites/spr_idle_human/spr_idle_human.yy",
   },
   "visible":true,
 }
