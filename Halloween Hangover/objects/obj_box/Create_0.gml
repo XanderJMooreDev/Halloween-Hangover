@@ -7,5 +7,6 @@ attempt_move = function(moveX, moveY) {
 	}
 	
 	return !place_meeting(moveX, moveY, obj_terrain)
-	&& !place_meeting(moveX, moveY, obj_door);
+	&& !place_meeting(moveX, moveY, obj_door)
+	&& !place_meeting(moveX, moveY, obj_enemy_default);
 }

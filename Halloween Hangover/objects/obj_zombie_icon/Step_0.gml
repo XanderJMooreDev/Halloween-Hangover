@@ -1,0 +1,1 @@
+visible = obj_player.has_ability[3];

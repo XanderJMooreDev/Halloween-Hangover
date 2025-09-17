@@ -8,6 +8,14 @@ state = "Idle";
 joystickX = 0;
 joystickY = 0;
 
+if keyboard_check(vk_backspace) {
+	room_goto(Room1);
+}
+
+if keyboard_check(vk_enter) {
+	room_goto(room_combat_test);
+}
+
 if(pressed_up)
 {
 	joystickY -= 1;
@@ -26,6 +34,18 @@ if(pressed_down)
 }
 if keyboard_check(vk_space) {
 	start_monster_abilities();
+}
+if keyboard_check(ord("W")) {
+	transform("Human");
+}
+if keyboard_check(ord("A")) {
+	transform("Vampire");
+}
+if keyboard_check(ord("S")) {
+	transform("Wolf");
+}
+if keyboard_check(ord("D")) {
+	transform("Zombie");
 }
 
 if joystickX != 0 {

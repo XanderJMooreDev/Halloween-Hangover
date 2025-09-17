@@ -1,6 +1,5 @@
-hasVampire = false;
-hasWerewolf = false;
-hasZombie = false;
+has_ability = [true, true, true, true];
+
 hasKey = false;
 
 state = "Idle";
@@ -21,11 +20,13 @@ pushingTime = 0;
 animationFrame = 0;
 
 monster_list = ["Human", "Vampire", "Wolf", "Zombie"];
+
 idle_poses = [spr_idle_human, spr_idle_vampire, spr_idle_wolf, spr_idle_zombie];
 walk_poses = [spr_walk_human, spr_walk_vampire, spr_walk_wolf, spr_walk_zombie];
+transform_poses = [spr_transform_human, spr_transform_vampire, spr_transform_wolf, spr_transform_zombie];
 
 start_monster_abilities = function() {
-	if actionTime > -1 {
+	if actionTime > -.3 {
 		return;
 	}
 	
@@ -33,18 +34,33 @@ start_monster_abilities = function() {
 		actionJoystickX = joystickX * 3;
 		actionJoystickY = joystickY * 3;
 		
-		effect_create_layer("Instances_1", ef_smoke, x, y, 10, c_white);
+		effect_create_layer("Instances", ef_smoke, x, y, 10, c_white);
 		
 		action = "Vampire Dash";
-		actionTime = .4;
+		actionTime = .35;
 	}
-	else if currentMonster == "Werewolf" {
+	else if currentMonster == "Wolf" {
+		actionJoystickX = joystickX * .5;
+		actionJoystickY = joystickY * .5;
 		
+		instance_create_layer(x, y, "Instances", obj_wolf_scratch);
+		
+		action = "Wolf Slash";
+		actionTime = .35;
+	}
+	else if currentMonster == "Zombie" {
+		actionJoystickX = 0;
+		actionJoystickY = 0;
+		
+		instance_create_layer(x, y, "Instances", obj_shield);
+		
+		action = "Zombie Shield";
+		actionTime = .7;
 	}
 }
 
 apply_monster_joystick = function() {
-	if actionTime > -1 {
+	if actionTime > -.3 {
 		actionTime -= 1 / game_get_speed(gamespeed_fps);
 	}
 	
@@ -56,7 +72,7 @@ apply_monster_joystick = function() {
 	animationFrame += 4 / game_get_speed(gamespeed_fps);
 	
 	if actionTime > 0 {
-		if action == "Vampire Dash" || action == "Werewolf Slash" {
+		if action == "Vampire Dash" || action == "Wolf Slash" {
 			joystickX = actionJoystickX;
 			joystickY = actionJoystickY;
 			
@@ -73,8 +89,13 @@ death = function() {
 }
 
 transform = function(form) {
-	if actionTime > 0 || form == currentMonster {
+	if actionTime > 0 || form == currentMonster || !has_ability[array_get_index(monster_list, form)] {
 		return;
+	}
+	else {
+		actionTime = .3;
+		action = "Transform";
+		currentMonster = form;
 	}
 }
 
