@@ -34,8 +34,11 @@ if joystickX != 0 {
 
 apply_monster_joystick();
 
-if attempt_move(x + 5 * joystickX, y + 5 * joystickY) {
+if attempt_move(x + 5 * joystickX, y) {
 	x += 5 * joystickX;
+}
+
+if attempt_move(x, y + 5 * joystickY) {
 	y += 5 * joystickY;
 }
 
