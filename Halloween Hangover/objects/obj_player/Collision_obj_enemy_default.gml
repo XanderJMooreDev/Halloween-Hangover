@@ -6,6 +6,7 @@ if currentMonster == "Zombie" && other.stunType != "None" {
 		other.velocityY = 5.1 * joystickY;
 	}
 	
+	other.stunType = "Confused";
 	pushingTime = .1;
 }
 else {

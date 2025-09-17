@@ -9,7 +9,7 @@ joystickX = 0;
 joystickY = 0;
 
 if keyboard_check(vk_backspace) {
-	room_goto(Room1);
+	room_goto(Level1);
 }
 
 if keyboard_check(vk_enter) {
@@ -63,15 +63,4 @@ if attempt_move(x, y + 5 * joystickY) {
 }
 
 show_debug_message(state);
-if y >= 750{
-	y = 750
-}
-else if y<=0{
-	y = 40;
-}
-if x>= 1310{
-	x = 1310;
-}
-else if x <= 0{
-	x = 40;
-}
+
