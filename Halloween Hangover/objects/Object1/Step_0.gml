@@ -40,3 +40,15 @@ if attempt_move(x + 5 * joystickX, y + 5 * joystickY) {
 }
 
 show_debug_message(state);
+if y >= 750{
+	y = 750
+}
+else if y<=0{
+	y = 40;
+}
+if x>= 1310{
+	x = 1310;
+}
+else if x <= 0{
+	x = 40;
+}
