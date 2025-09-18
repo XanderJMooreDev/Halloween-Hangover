@@ -9,8 +9,8 @@
   "name":"obj_box",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Elements",
+    "path":"folders/Objects/Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,12 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_box_hitbox",
-    "path":"sprites/spr_box_hitbox/spr_box_hitbox.yy",
+    "name":"spr_box",
+    "path":"sprites/spr_box/spr_box.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_box_hitbox",
-    "path":"sprites/spr_box_hitbox/spr_box_hitbox.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

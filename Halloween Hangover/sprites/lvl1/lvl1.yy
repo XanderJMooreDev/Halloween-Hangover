@@ -44,8 +44,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"Halloween Hangover",
-    "path":"Halloween Hangover.yyp",
+    "name":"Tiles",
+    "path":"folders/Sprites/Tiles.yy",
   },
   "preMultiplyAlpha":true,
   "resourceType":"GMSprite",
