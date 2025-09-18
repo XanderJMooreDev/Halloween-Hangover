@@ -7,23 +7,28 @@ velocityY = 0;
 
 stunTimer = 0;
 
+// Updates the enemy's movement command based on several factors.
 enemy_joystick = function(target) {
+	// If the enemy is stunned, it doesn't move and skips the rest of the code with "return". 
 	if stunType != "None" {
 		joystickX = 0;
 		joystickY = 0;
 		return;
 	}
 	
+	// We check horizontal movement by seeing if the player is left or right of it. 
 	if target.x > x + 10 {
 		joystickX = 1;
 	}
 	else if target.x < x - 10 {
 		joystickX = -1;
 	}
+	// If they're roughly in-line with the player, we don't move horizontally. 
 	else {
 		joystickX = 0;
 	}
 	
+	// Almost identical to horizontal code. 
 	if target.y > y + 10 {
 		joystickY = 1;
 	}
@@ -35,6 +40,7 @@ enemy_joystick = function(target) {
 	}
 }
 
+// Returns whether an attempted move will put us in an impossible spot. 
 attempt_move = function(moveX, moveY) {
 	
 	return !place_meeting(moveX, moveY, obj_terrain) 
@@ -43,6 +49,7 @@ attempt_move = function(moveX, moveY) {
 		&& !place_meeting(moveX, moveY, obj_gap);
 }
 
+// The same as attempt_move(), but we allow it to be pushed into a gap, destroying it if we do. 
 attempt_move_push = function(moveX, moveY) {
 	if place_meeting(moveX, moveY, obj_gap) {
 		instance_destroy();

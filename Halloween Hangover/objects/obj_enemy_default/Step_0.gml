@@ -1,10 +1,13 @@
+// Reduces the stunTimer every frame. 
 if stunTimer > 0 {
 	stunTimer -= 1 / game_get_speed(gamespeed_fps);
 }
+// If the stunTimer is up and we're still stunned, we make this update. 
 else if stunType != "None" {
 	stunType = "None";
 }
 
+// We use typical movement code here if not stunned. 
 if stunType == "None" {
 	enemy_joystick(obj_player);
 
@@ -16,6 +19,7 @@ if stunType == "None" {
 		y += 3 * joystickY;
 	}
 }
+// If we are stunned, we basically do the exact same code as obj_box. 
 else {
 
 	if (attempt_move_push(x + velocityX, y)) {

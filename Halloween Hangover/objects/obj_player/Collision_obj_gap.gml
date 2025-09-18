@@ -1,3 +1,4 @@
+// Temporary code to repawn the player. 
 if action == "Vampire Dash"{
 }
 else {

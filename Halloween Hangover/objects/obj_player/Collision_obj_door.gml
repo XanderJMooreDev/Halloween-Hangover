@@ -1,3 +1,4 @@
+// Runs code if we have a key. 
 if hasKey{
 	if room == room_combat_test{
 		room_goto(Level1);

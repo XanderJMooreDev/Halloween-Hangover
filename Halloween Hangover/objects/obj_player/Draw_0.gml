@@ -1,3 +1,4 @@
+// Based on the transformation or action happening, we draw the appropriate sprite. 
 if action == "Transform" {
 		animate(transform_poses[array_get_index(monster_list, currentMonster)]);
 }

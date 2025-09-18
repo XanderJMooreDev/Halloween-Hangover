@@ -1,3 +1,5 @@
+// Effectively the same code as collision with obj_box. 
+
 if currentMonster == "Zombie" && other.stunType != "None" {
 	if abs(x - other.x) > abs(y - other.y) {
 		other.velocityX = 5.1 * joystickX;
