@@ -27,7 +27,7 @@
   "origin":0,
   "parent":{
     "name":"Elements",
-    "path":"folders/Sprites/Elements.yy",
+    "path":"folders/Sounds/Sprites/Elements.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -28,7 +28,7 @@
   "origin":0,
   "parent":{
     "name":"Placeholders",
-    "path":"folders/Sprites/Placeholders.yy",
+    "path":"folders/Sounds/Sprites/Placeholders.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
