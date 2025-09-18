@@ -54,7 +54,7 @@ start_monster_abilities = function() {
 		
 		instance_create_layer(x, y, "Instances", obj_shield);
 		
-		action = "Zombie Shield";
+		state = "Zombie Shield";
 		actionTime = .7;
 	}
 }
@@ -65,13 +65,18 @@ apply_monster_joystick = function() {
 	}
 	
 	if pushingTime > 0 {
-		state = "Zombie Push";
+		action = "Zombie Push";
 		pushingTime -= 1 / game_get_speed(gamespeed_fps);
 	}
 	
 	animationFrame += 4 / game_get_speed(gamespeed_fps);
 	
 	if actionTime > 0 {
+		if state == "Zombie Shield" {
+			joystickX = 0;
+			joystickY = 0;
+		}
+		
 		if action == "Vampire Dash" || action == "Wolf Slash" {
 			joystickX = actionJoystickX;
 			joystickY = actionJoystickY;

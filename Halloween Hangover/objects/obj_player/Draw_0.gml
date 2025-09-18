@@ -12,6 +12,9 @@ else if state == "Idle" {
 else if state == "Zombie Push" {
 		animate(spr_push_zombie);
 }
+else if state == "Zombie Shield" {
+		animate(spr_shield_zombie);
+}
 else if state == "Vampire Dash" {
 		animate(spr_dash_vampire);
 }

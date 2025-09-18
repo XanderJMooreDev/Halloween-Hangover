@@ -3,7 +3,9 @@ var pressed_left = keyboard_check(vk_left);
 var pressed_right = keyboard_check(vk_right);
 var pressed_down = keyboard_check(vk_down);
 
-state = "Idle";
+if state != "Zombie Shield" || actionTime <= 0 {
+	state = "Idle";
+}
 
 joystickX = 0;
 joystickY = 0;
