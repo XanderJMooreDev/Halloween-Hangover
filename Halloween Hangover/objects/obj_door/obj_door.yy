@@ -31,9 +31,6 @@
     "name":"spr_door",
     "path":"sprites/spr_door/spr_door.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_terrain",
-    "path":"sprites/spr_terrain/spr_terrain.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

@@ -15,7 +15,7 @@ else {
 	return;
 }
 
-if attempt_move(x - 5 * joystickX, y - 5 * joystickY) {
+if attempt_move(x - walkSpeed * joystickX, y - walkSpeed * joystickY) {
 	x -= 5 * joystickX;
 	y -= 5 * joystickY;
 }

@@ -6,6 +6,8 @@ joystickX = 0;
 joystickY = 0;
 facingDir = 1;
 
+walkSpeed = 5;
+
 image_xscale = 1.5;
 image_yscale = 1.5;
 
@@ -80,7 +82,7 @@ apply_monster_joystick = function() {
 	
 	animationFrame += 4 / game_get_speed(gamespeed_fps);
 	
-	if actionTime > 0 {
+	if actionTime > 0 || pushingTime > 0 {
 		// The next 2 if statements make certain attacks prevent inputs.
 		if state == "Zombie Shield" {
 			joystickX = 0;
@@ -93,6 +95,10 @@ apply_monster_joystick = function() {
 			
 			state = action;
 		}
+		
+		if action == "Zombie Push" {
+			state = action;
+		}
 	}
 	// If we're done doing an action, we set it to none. 
 	else if action != "None" {
@@ -102,7 +108,7 @@ apply_monster_joystick = function() {
 
 // Placeholder "Death" function. 
 death = function() {
-	show_debug_message("Died");
+	room_goto(room);
 }
 
 // Allows us to transform into the specified transformation. 

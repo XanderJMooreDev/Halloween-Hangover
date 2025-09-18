@@ -10,7 +10,7 @@ else if state == "Idle" {
 		animate(idle_poses[array_get_index(monster_list, currentMonster)]);
 	}
 }
-else if state == "Zombie Push" {
+else if action == "Zombie Push" {
 		animate(spr_push_zombie);
 }
 else if state == "Zombie Shield" {

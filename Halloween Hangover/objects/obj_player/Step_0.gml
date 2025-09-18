@@ -3,6 +3,13 @@ var pressed_left = keyboard_check(vk_left);
 var pressed_right = keyboard_check(vk_right);
 var pressed_down = keyboard_check(vk_down);
 
+if currentMonster == "Wolf" {
+	walkSpeed = 7;
+}
+else {
+	walkSpeed = 5;
+}
+
 // Updates us after we shield. 
 if state != "Zombie Shield" || actionTime <= 0 {
 	state = "Idle";
@@ -61,14 +68,13 @@ if joystickX != 0 {
 apply_monster_joystick();
 
 // Makes moves if they're valid. 
-if attempt_move(x + 5 * joystickX, y) {
-	x += 5 * joystickX;
+if attempt_move(x + walkSpeed * joystickX, y) {
+	x += walkSpeed * joystickX;
 }
 
-if attempt_move(x, y + 5 * joystickY) {
-	y += 5 * joystickY;
+if attempt_move(x, y + walkSpeed * joystickY) {
+	y += walkSpeed * joystickY;
 }
 
 // For debugging. 
-show_debug_message(state);
-
+show_debug_message(action);
