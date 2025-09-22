@@ -24,7 +24,7 @@ if keyboard_check(vk_backspace) {
 }
 
 if keyboard_check(vk_enter) {
-	room_goto(room_combat_test);
+	room_goto(room_vampire_fight);
 }
 
 // Generic controls. 
@@ -75,6 +75,3 @@ if attempt_move(x + walkSpeed * joystickX, y) {
 if attempt_move(x, y + walkSpeed * joystickY) {
 	y += walkSpeed * joystickY;
 }
-
-// For debugging. 
-show_debug_message(action);

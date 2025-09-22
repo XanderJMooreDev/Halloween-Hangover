@@ -25,8 +25,14 @@ monster_list = ["Human", "Vampire", "Wolf", "Zombie"];
 idle_poses = [spr_idle_human, spr_idle_vampire, spr_idle_wolf, spr_idle_zombie];
 walk_poses = [spr_walk_human, spr_walk_vampire, spr_walk_wolf, spr_walk_zombie];
 transform_poses = [spr_transform_human, spr_transform_vampire, spr_transform_wolf, spr_transform_zombie];
-// An array that stores whether each ability is unlocked. 
-has_ability = [true, true, true, true];
+// Initializing the array that stores whether each ability is unlocked. 
+
+if room == Level1 || room == room_vampire_fight {
+	has_ability = [true, true, false, false];
+}
+else if room == Level2 || room == room_wolf_fight {
+	has_ability = [true, true, true, false];
+}
 
 start_monster_abilities = function() {
 	// Only lets us use a monster ability if the cooldown is up. 
@@ -129,7 +135,8 @@ attempt_move = function(moveX, moveY) {
 		death();
 	}
 	return !place_meeting(moveX, moveY, obj_terrain) 
-		&& (hasKey || !place_meeting(moveX, moveY, obj_door));
+		&& (hasKey || !place_meeting(moveX, moveY, obj_door)
+		&& !place_meeting(moveX, moveY, obj_garlic_clove));
 }
 
 // This function is called in Draw. 
