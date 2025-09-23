@@ -2,6 +2,13 @@ stunType = "None";
 joystickX = 0;
 joystickY = 0;
 
+if room == Level2 || room == room_wolf_fight {
+	sprite_index = spr_pumpkin_walk;
+}
+else {
+	sprite_index = spr_zombie_walk;
+}
+
 velocityX = 0;
 velocityY = 0;
 

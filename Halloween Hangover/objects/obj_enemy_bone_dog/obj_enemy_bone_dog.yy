@@ -35,9 +35,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Obj_Playersprite",
-    "path":"sprites/Obj_Playersprite/Obj_Playersprite.yy",
+    "name":"spr_bone_dog_walk",
+    "path":"sprites/spr_bone_dog_walk/spr_bone_dog_walk.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_bone_dog_stun",
+    "path":"sprites/spr_bone_dog_stun/spr_bone_dog_stun.yy",
+  },
   "visible":true,
 }

@@ -5,6 +5,12 @@ if stunTimer > 0 {
 // If the stunTimer is up and we're still stunned, we make this update. 
 else if stunType != "None" {
 	stunType = "None";
+	if room == Level2 || room == room_wolf_fight {
+		sprite_index = spr_pumpkin_walk;
+	}
+	else {
+		sprite_index = spr_zombie_walk;
+	}
 }
 
 // We use typical movement code here if not stunned. 

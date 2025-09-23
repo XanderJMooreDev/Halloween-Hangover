@@ -38,6 +38,9 @@ if room == Level1 || room == room_vampire_fight {
 else if room == Level2 || room == room_wolf_fight {
 	has_ability = [true, true, true, false];
 }
+else {
+	has_ability = [true, true, true, true];
+}
 
 start_monster_abilities = function() {
 	// Only lets us use a monster ability if the cooldown is up. 
@@ -119,7 +122,9 @@ apply_monster_joystick = function() {
 
 // Placeholder "Death" function. 
 death = function() {
-	room_goto(room);
+	visible = false;
+	effect_create_layer("Instances", ef_cloud, x, y, 10, c_orange);
+	alarm[0] = 120;
 }
 
 // Allows us to transform into the specified transformation. 

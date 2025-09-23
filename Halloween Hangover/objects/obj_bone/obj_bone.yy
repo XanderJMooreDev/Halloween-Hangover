@@ -10,8 +10,8 @@
   "name":"obj_bone",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Enemies.yy",
+    "name":"Projectiles",
+    "path":"folders/Objects/Enemies/Projectiles.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_bone",
+    "path":"sprites/spr_bone/spr_bone.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
