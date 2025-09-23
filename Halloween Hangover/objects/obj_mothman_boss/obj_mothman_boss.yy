@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Obj_Playersprite",
-    "path":"sprites/Obj_Playersprite/Obj_Playersprite.yy",
+    "name":"spr_mothman_boss_walk",
+    "path":"sprites/spr_mothman_boss_walk/spr_mothman_boss_walk.yy",
   },
   "spriteMaskId":null,
   "visible":true,

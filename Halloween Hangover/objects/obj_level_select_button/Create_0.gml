@@ -1,14 +1,15 @@
 hovering = false;
+	sprite_index = spr_level_select_button;
 
 if x == 192 {
-	sprite_index = spr_button_placeholder;
-	room_assigned = Level1;
+	image_index = 0;
+	room_assigned = room_vampire_unlock;
 }
 else if x == 608 {
-	sprite_index = spr_button_placeholder;
-	room_assigned = Level2;
+	image_index = 1;
+	room_assigned = room_wolf_unlock;
 }
 else {
-	sprite_index = spr_button_placeholder;
-	room_assigned = Level2;
+	image_index = 2;
+	room_assigned = room_zombie_unlock;
 }

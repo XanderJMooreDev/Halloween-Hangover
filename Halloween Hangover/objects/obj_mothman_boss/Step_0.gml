@@ -1,6 +1,6 @@
 if hp <= 0 {
-	if sprite_index != spr_mothman_boss_stun {
-		sprite_index = spr_mothman_boss_stun;
+	if sprite_index != spr_mothman_boss_burning {
+		sprite_index = spr_mothman_boss_burning;
 		alarm[0] = 1000000;
 		
 		alarm[2] = 180;
@@ -15,6 +15,7 @@ if stunTimer > 0 {
 // If the stunTimer is up and we're still stunned, we make this update. 
 else if stunType != "None" {
 	stunType = "None";
+	sprite_index = spr_mothman_boss_walk;
 }
 
 // We use typical movement code here if not stunned. 
