@@ -1,5 +1,10 @@
 hasKey = false;
 
+hp = 3;
+iFrames = 0;
+
+transparency = 1;
+
 state = "Idle";
 
 joystickX = 0;
@@ -150,6 +155,17 @@ animate = function(animation) {
 			1.5,
 			0,
 			make_color_rgb(255,255,255),
-			1
+			transparency
 		);
+}
+
+take_damage = function() {
+	if iFrames <= 0 {
+		hp--;
+		iFrames = 3;
+		
+		if hp <= 0 {
+			death();
+		}
+	}
 }

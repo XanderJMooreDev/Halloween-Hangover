@@ -12,6 +12,9 @@ if currentMonster == "Zombie" && other.stunType != "None" {
 	pushingTime = .1;
 }
 else {
+	if action != "Vampire Dash" && other.stunType == "None" {
+		take_damage();
+	}
 	return;
 }
 

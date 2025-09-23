@@ -75,3 +75,11 @@ if attempt_move(x + walkSpeed * joystickX, y) {
 if attempt_move(x, y + walkSpeed * joystickY) {
 	y += walkSpeed * joystickY;
 }
+
+if iFrames > 0 {
+	iFrames -= 1 / game_get_speed(gamespeed_fps);
+	transparency = 1 - iFrames % 1;
+}
+else {
+	transparency = 1;
+}
