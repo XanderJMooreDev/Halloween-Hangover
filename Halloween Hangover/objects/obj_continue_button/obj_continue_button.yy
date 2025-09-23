@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_level_select_button",
-    "path":"sprites/spr_level_select_button/spr_level_select_button.yy",
+    "name":"spr_continue_button",
+    "path":"sprites/spr_continue_button/spr_continue_button.yy",
   },
   "spriteMaskId":null,
   "visible":true,

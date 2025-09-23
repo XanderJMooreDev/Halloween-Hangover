@@ -16,7 +16,7 @@ walkSpeed = 5;
 image_xscale = 1.5;
 image_yscale = 1.5;
 
-currentMonster = "Vampire";
+currentMonster = "Human";
 actionJoystickX = 0;
 actionJoystickY = 0;
 action = "None";
@@ -122,9 +122,11 @@ apply_monster_joystick = function() {
 
 // Placeholder "Death" function. 
 death = function() {
-	visible = false;
-	effect_create_layer("Instances", ef_cloud, x, y, 10, c_orange);
-	alarm[0] = 120;
+	if visible {
+		visible = false;
+		effect_create_layer("Instances", ef_explosion, x, y, 10, c_orange);
+		alarm[0] = 60;
+	}
 }
 
 // Allows us to transform into the specified transformation. 
