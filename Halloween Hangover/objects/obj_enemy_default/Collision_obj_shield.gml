@@ -3,7 +3,7 @@
 if stunType == "None" {
 	stunType = "Blocked";
 	stunTimer = 5;
-	
+	audio_play_sound(sfx_zombie_shield, 1, false);
 	if room == Level2 || room == room_wolf_fight {
 		sprite_index = spr_pumpkin_stun;
 	}

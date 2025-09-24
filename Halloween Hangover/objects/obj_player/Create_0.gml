@@ -135,6 +135,7 @@ transform = function(form) {
 		return;
 	}
 	else {
+		audio_play_sound(sfx_transform, 1, false);
 		actionTime = .3;
 		action = "Transform";
 		currentMonster = form;
@@ -144,6 +145,7 @@ transform = function(form) {
 // Returns whether we can move into a spot, and kills us if we walk into a pit. 
 attempt_move = function(moveX, moveY) {
 	if place_meeting(moveX, moveY, obj_gap) && action != "Vampire Dash" {
+		audio_play_sound(sfx_pitfall, 1, false);
 		death();
 	}
 	return !place_meeting(moveX, moveY, obj_terrain) 
@@ -170,6 +172,7 @@ take_damage = function() {
 	if iFrames <= 0 {
 		hp--;
 		iFrames = 3;
+		audio_play_sound(sfx_hurt, 1, false);
 		
 		if hp <= 0 {
 			death();

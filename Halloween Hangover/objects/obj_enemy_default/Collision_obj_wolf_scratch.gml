@@ -5,4 +5,5 @@ instance_destroy(other);
 
 if stunType != "None" {
 	instance_destroy();
+	audio_play_sound(sfx_enemy_hurt, 1, false);
 }
