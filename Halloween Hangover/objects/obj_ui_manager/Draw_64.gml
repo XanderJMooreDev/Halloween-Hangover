@@ -113,19 +113,19 @@ if obj_player.hp >= 3 {
 }
 
 if instance_exists(obj_mothman_boss) {
-	bossHealth = floor(obj_mothman_boss.hp / 30 * 5);
+	bossHealth = ceil(obj_mothman_boss.hp / 30 * 5);
 }
 else if instance_exists(obj_vampire_boss) {
-	bossHealth = floor(obj_vampire_boss.hp / 6 * 5);
+	bossHealth = ceil(obj_vampire_boss.hp / 6 * 5);
 }
 else if instance_exists(obj_wolf_boss) {
-	bossHealth = floor(obj_wolf_boss.hp / 8 * 5);
+	bossHealth = ceil(obj_wolf_boss.hp / 8 * 5);
 }
 else {
 	bossHealth = 0;
 }
 
-if bossHealth != 0 {
+if bossHealth > 0 {
 	draw_sprite_ext(
 		spr_boss_bar,
 		bossHealth,

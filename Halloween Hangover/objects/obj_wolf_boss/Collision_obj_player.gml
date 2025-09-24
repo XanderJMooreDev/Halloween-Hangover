@@ -6,7 +6,7 @@ if other.state == "Vampire Dash" && moving {
 		audio_play_sound(sfx_vampire_stun, 1, false);
 	}
 }
-else if other.state == "Wolf Slash" && sprite_index == spr_wolf_boss_stun {
+else if other.state == "Wolf Slash" && sprite_index == spr_wolf_boss_stun && hp > 0 {
 	hp--;
 	sprite_index = spr_wolf_boss_stand;
 	alarm[0] = 1;
