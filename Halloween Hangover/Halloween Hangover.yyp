@@ -180,9 +180,9 @@
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
     {"roomId":{"name":"room_wolf_fight","path":"rooms/room_wolf_fight/room_wolf_fight.yy",},},
     {"roomId":{"name":"room_zombie_unlock","path":"rooms/room_zombie_unlock/room_zombie_unlock.yy",},},
+    {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
     {"roomId":{"name":"room_mothman_fight","path":"rooms/room_mothman_fight/room_mothman_fight.yy",},},
     {"roomId":{"name":"room_win_screen","path":"rooms/room_win_screen/room_win_screen.yy",},},
-    {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
