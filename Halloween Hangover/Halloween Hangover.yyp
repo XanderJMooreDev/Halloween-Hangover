@@ -41,8 +41,8 @@
     {"$GMFolder":"","%Name":"Elements","folderPath":"folders/Sprites/Elements.yy","name":"Elements","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enemies","folderPath":"folders/Sprites/Enemies.yy","name":"Enemies","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Bone Dog","folderPath":"folders/Sprites/Enemies/Bone Dog.yy","name":"Bone Dog","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Zombie","folderPath":"folders/Sprites/Enemies/Zombie.yy","name":"Zombie","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Pumpkin","folderPath":"folders/Sprites/Enemies/Pumpkin.yy","name":"Pumpkin","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Zombie","folderPath":"folders/Sprites/Enemies/Zombie.yy","name":"Zombie","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Placeholders","folderPath":"folders/Sprites/Placeholders.yy","name":"Placeholders","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player Sprites","folderPath":"folders/Sprites/Player Sprites.yy","name":"Player Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Splash Screens","folderPath":"folders/Sprites/Splash Screens.yy","name":"Splash Screens","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -178,14 +178,6 @@
     {"roomId":{"name":"room_wolf_fight","path":"rooms/room_wolf_fight/room_wolf_fight.yy",},},
     {"roomId":{"name":"room_zombie_unlock","path":"rooms/room_zombie_unlock/room_zombie_unlock.yy",},},
     {"roomId":{"name":"room_mothman_fight","path":"rooms/room_mothman_fight/room_mothman_fight.yy",},},
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-    {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
-=======
-    {"roomId":{"name":"room_win_screen","path":"rooms/room_win_screen/room_win_screen.yy",},},
->>>>>>> origin/Functional
->>>>>>> Stashed changes
   ],
   "templateType":"game",
   "TextureGroups":[
