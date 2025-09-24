@@ -38,6 +38,9 @@
     "name":"spr_wolf_boss_stand",
     "path":"sprites/spr_wolf_boss_stand/spr_wolf_boss_stand.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_wolf_boss_stand",
+    "path":"sprites/spr_wolf_boss_stand/spr_wolf_boss_stand.yy",
+  },
   "visible":true,
 }

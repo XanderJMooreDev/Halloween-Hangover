@@ -29,6 +29,9 @@
     {"$GMFolder":"","%Name":"Sequences","folderPath":"folders/Sequences.yy","name":"Sequences","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Shaders","folderPath":"folders/Shaders.yy","name":"Shaders","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Enemy","folderPath":"folders/Sounds/Enemy.yy","name":"Enemy","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Other","folderPath":"folders/Sounds/Other.yy","name":"Other","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Player","folderPath":"folders/Sounds/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Bosses","folderPath":"folders/Sprites/Bosses.yy","name":"Bosses","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Mothman","folderPath":"folders/Sprites/Bosses/Mothman.yy","name":"Mothman","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -86,9 +89,20 @@
     {"id":{"name":"room_mothman_fight","path":"rooms/room_mothman_fight/room_mothman_fight.yy",},},
     {"id":{"name":"room_vampire_fight","path":"rooms/room_vampire_fight/room_vampire_fight.yy",},},
     {"id":{"name":"room_vampire_unlock","path":"rooms/room_vampire_unlock/room_vampire_unlock.yy",},},
+    {"id":{"name":"room_win_screen","path":"rooms/room_win_screen/room_win_screen.yy",},},
     {"id":{"name":"room_wolf_fight","path":"rooms/room_wolf_fight/room_wolf_fight.yy",},},
     {"id":{"name":"room_wolf_unlock","path":"rooms/room_wolf_unlock/room_wolf_unlock.yy",},},
     {"id":{"name":"room_zombie_unlock","path":"rooms/room_zombie_unlock/room_zombie_unlock.yy",},},
+    {"id":{"name":"sfx_boss_kill","path":"sounds/sfx_boss_kill/sfx_boss_kill.yy",},},
+    {"id":{"name":"sfx_enemy_hurt","path":"sounds/sfx_enemy_hurt/sfx_enemy_hurt.yy",},},
+    {"id":{"name":"sfx_hurt","path":"sounds/sfx_hurt/sfx_hurt.yy",},},
+    {"id":{"name":"sfx_key_pickup","path":"sounds/sfx_key_pickup/sfx_key_pickup.yy",},},
+    {"id":{"name":"sfx_pitfall","path":"sounds/sfx_pitfall/sfx_pitfall.yy",},},
+    {"id":{"name":"sfx_transform","path":"sounds/sfx_transform/sfx_transform.yy",},},
+    {"id":{"name":"sfx_unlock_door","path":"sounds/sfx_unlock_door/sfx_unlock_door.yy",},},
+    {"id":{"name":"sfx_vampire_stun","path":"sounds/sfx_vampire_stun/sfx_vampire_stun.yy",},},
+    {"id":{"name":"sfx_wolf_scratch","path":"sounds/sfx_wolf_scratch/sfx_wolf_scratch.yy",},},
+    {"id":{"name":"sfx_zombie_shield","path":"sounds/sfx_zombie_shield/sfx_zombie_shield.yy",},},
     {"id":{"name":"Lvl_2_set","path":"sprites/Lvl_2_set/Lvl_2_set.yy",},},
     {"id":{"name":"lvl1","path":"sprites/lvl1/lvl1.yy",},},
     {"id":{"name":"Obj_Playersprite","path":"sprites/Obj_Playersprite/Obj_Playersprite.yy",},},
@@ -105,6 +119,7 @@
     {"id":{"name":"spr_dash_vampire","path":"sprites/spr_dash_vampire/spr_dash_vampire.yy",},},
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},},
     {"id":{"name":"spr_game_logo","path":"sprites/spr_game_logo/spr_game_logo.yy",},},
+    {"id":{"name":"spr_garlic","path":"sprites/spr_garlic/spr_garlic.yy",},},
     {"id":{"name":"spr_heart","path":"sprites/spr_heart/spr_heart.yy",},},
     {"id":{"name":"spr_idle_human","path":"sprites/spr_idle_human/spr_idle_human.yy",},},
     {"id":{"name":"spr_idle_vampire","path":"sprites/spr_idle_vampire/spr_idle_vampire.yy",},},
@@ -128,6 +143,7 @@
     {"id":{"name":"spr_stairs_down","path":"sprites/spr_stairs_down/spr_stairs_down.yy",},},
     {"id":{"name":"spr_stairs_up","path":"sprites/spr_stairs_up/spr_stairs_up.yy",},},
     {"id":{"name":"spr_terrain","path":"sprites/spr_terrain/spr_terrain.yy",},},
+    {"id":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},},
     {"id":{"name":"spr_transform_human","path":"sprites/spr_transform_human/spr_transform_human.yy",},},
     {"id":{"name":"spr_transform_vampire","path":"sprites/spr_transform_vampire/spr_transform_vampire.yy",},},
     {"id":{"name":"spr_transform_wolf","path":"sprites/spr_transform_wolf/spr_transform_wolf.yy",},},
@@ -162,6 +178,14 @@
     {"roomId":{"name":"room_wolf_fight","path":"rooms/room_wolf_fight/room_wolf_fight.yy",},},
     {"roomId":{"name":"room_zombie_unlock","path":"rooms/room_zombie_unlock/room_zombie_unlock.yy",},},
     {"roomId":{"name":"room_mothman_fight","path":"rooms/room_mothman_fight/room_mothman_fight.yy",},},
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
+=======
+    {"roomId":{"name":"room_win_screen","path":"rooms/room_win_screen/room_win_screen.yy",},},
+>>>>>>> origin/Functional
+>>>>>>> Stashed changes
   ],
   "templateType":"game",
   "TextureGroups":[

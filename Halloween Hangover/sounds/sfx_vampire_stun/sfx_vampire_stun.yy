@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_vampire_stun",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.37630385,
+  "name":"sfx_vampire_stun",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Sounds/Player.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_vampire_stun.wav",
+  "type":0,
+  "volume":1.0,
+}

@@ -1,7 +1,7 @@
 if hp <= 0 {
-	if sprite_index != spr_mothman_boss_burning {
+	if alarm[2] < 0 {
+		alarm[0] = -1;
 		sprite_index = spr_mothman_boss_burning;
-		alarm[0] = 1000000;
 		
 		alarm[2] = 180;
 	}
